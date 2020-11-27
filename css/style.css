@@ -84,10 +84,10 @@ input, textarea, select {
 
 body {
   color: #2A2A2A;
-  line-height: 1.2;
   font-family: "Apfel Grotezk", sans-serif;
   font-weight: normal;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  line-height: 1.3; }
 
 .browser {
   background-color: #bfbfbf; }
@@ -165,15 +165,6 @@ body {
   max-width: 1120px;
   margin: 0 auto; }
 
-.navigation {
-  border-color: #2A2A2A; }
-
-.nav__logo-box {
-  max-width: 8rem; }
-
-.nav__item:not(:last-child) {
-  margin-right: 4rem; }
-
 .hero__text, .hero__cta-wrap {
   max-width: 28.125rem; }
 
@@ -188,6 +179,21 @@ body {
     height: auto;
     width: 2rem;
     fill: transparent; }
+
+.navigation {
+  border-color: #2A2A2A; }
+
+.nav__logo-box {
+  max-width: 8rem; }
+
+.nav__item:not(:last-child) {
+  margin-right: 4rem; }
+
+.projects__service-header {
+  max-width: 15.5rem; }
+
+.projects__service-decor {
+  bottom: -0.25rem; }
 
 /*! TACHYONS v4.12.0 | http://tachyons.io */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
