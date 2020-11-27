@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Aldo's dev portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldotru96/portfolio.git"
+  },
+  "author": "Aldo Trujillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aldotru96/portfolio/issues"
+  },
+  "homepage": "https://github.com/aldotru96/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

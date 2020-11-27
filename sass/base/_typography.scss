@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Apfel Grotezk";
+  src: url("../assets/fonts/ApfelGrotezk-Regular.woff") format("woff"),
+       url("../assets/fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
+       url("../assets/fonts/ApfelGrotezk-Regular.svg") format("svg"),
+       url("../assets/fonts/ApfelGrotezk-Regular.ttf") format("truetype"),
+       url("../assets/fonts/ApfelGrotezk-Regular.eot") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+body {
+  color: $black;
+  line-height: 1.2;
+  font-family: "Apfel Grotezk", sans-serif;
+  font-weight: normal;
+  font-size: 1.25rem;
+}

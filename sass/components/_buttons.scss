@@ -1,0 +1,89 @@
+.btn {
+
+  &__box {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  &__shadow {
+    background-color: $black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+    z-index: 0;
+
+    &::before,
+    &::after {
+      content: '';
+      background-color: $black;
+      display: inline-block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      z-index: 1;
+    }
+
+    &::before {
+      top: 4px;
+      right: 0;
+      transform: translateY(-100%) skewY(45deg);
+    }
+
+    &::after {
+      bottom: 4px;
+      left: 0;
+      transform: translateX(-100%) skewY(45deg);
+    }
+
+  }
+
+  &__content {
+    background-color: $white;
+    border: solid 4px $black;
+    position: relative;
+    padding: 1rem 2rem;
+    z-index: 1;
+  }
+
+  &__box:hover  &__shadow::before,
+  &__box:hover  &__shadow::after,
+  &__box:focus  &__shadow::before,
+  &__box:focus  &__shadow::after {
+    width: 4px;
+    height: 6px;
+  }
+
+  &__box:hover  &__shadow::after,
+  &__box:focus  &__shadow::after {
+    bottom: 2px;
+    left: 0;
+  }
+
+  &__box:hover &__content,
+  &__box:focus &__content {
+    transform: translate(0.25rem, 0.25rem);
+  }
+
+  &__box:active &__content {
+    transform: translate(0.5rem, 0.5rem);
+  }
+
+  &__box:active  &__shadow::before,
+  &__box:active  &__shadow::after {
+    width: 0;
+    height: 0;
+  }
+
+}

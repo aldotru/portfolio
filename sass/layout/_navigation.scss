@@ -1,0 +1,16 @@
+.navigation {
+    border-color: $black;
+}
+
+.nav {
+
+
+    &__logo-box {
+        max-width: 8rem;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 4rem;
+    }
+
+}

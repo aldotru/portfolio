@@ -1,0 +1,8 @@
+.browser {
+  background-color: $light-gray;
+
+  &__shadow {
+    @include box-shadow;
+  }
+
+}
