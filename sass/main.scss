@@ -16,11 +16,9 @@
 
 // Layout
 @import 'layout/footer';
+@import 'layout/hero';
 @import 'layout/navigation';
-
-// Pages
-@import 'pages/home';
-
+@import 'layout/projects';
 
 // Vendors
 @import 'vendors/tachyons';
