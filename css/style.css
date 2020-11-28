@@ -189,10 +189,10 @@ body {
 .nav__item:not(:last-child) {
   margin-right: 4rem; }
 
-.projects__service-header {
+.tools__service-header {
   max-width: 15.5rem; }
 
-.projects__service-decor {
+.tools__service-decor {
   bottom: -0.25rem; }
 
 /*! TACHYONS v4.12.0 | http://tachyons.io */
