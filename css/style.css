@@ -94,16 +94,16 @@ body {
   .browser__shadow {
     box-shadow: 0.5rem 0.5rem #2A2A2A; }
 
+.btn:focus {
+  outline: none; }
+
 .btn__box {
   background-color: transparent;
   border: 0;
-  cursor: pointer;
   max-width: 100%;
   margin: 0;
   padding: 0;
   position: relative; }
-  .btn__box:focus {
-    outline: none; }
 
 .btn__shadow {
   background-color: #2A2A2A;
@@ -137,6 +137,8 @@ body {
   padding: 1rem 2rem;
   z-index: 1; }
 
+.btn:focus .btn__shadow::before,
+.btn:focus .btn__shadow::after,
 .btn__box:hover .btn__shadow::before,
 .btn__box:hover .btn__shadow::after,
 .btn__box:focus .btn__shadow::before,
@@ -144,11 +146,13 @@ body {
   width: 4px;
   height: 6px; }
 
+.btn:focus .btn__shadow::after,
 .btn__box:hover .btn__shadow::after,
 .btn__box:focus .btn__shadow::after {
   bottom: 2px;
   left: 0; }
 
+.btn:focus .btn__content,
 .btn__box:hover .btn__content,
 .btn__box:focus .btn__content {
   transform: translate(0.25rem, 0.25rem); }
