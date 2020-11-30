@@ -169,6 +169,15 @@ body {
   max-width: 1120px;
   margin: 0 auto; }
 
+.footer__item:not(:last-child) {
+  margin-right: 2rem; }
+
+.footer__social-item:not(:last-child) {
+  margin-right: 1.5rem; }
+
+.footer__social-icon {
+  max-width: 2rem; }
+
 .navigation {
   border-color: #2A2A2A; }
 
