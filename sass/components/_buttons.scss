@@ -1,7 +1,7 @@
 .btn {
 
   &:focus {
-    outline: none;
+    @include outline-none;
   }
 
   &__box {
