@@ -169,6 +169,15 @@ body {
   max-width: 1120px;
   margin: 0 auto; }
 
+.navigation {
+  border-color: #2A2A2A; }
+
+.nav__logo-box {
+  max-width: 8rem; }
+
+.nav__item:not(:last-child) {
+  margin-right: 4rem; }
+
 .hero__text, .hero__cta-wrap {
   max-width: 28.125rem; }
 
@@ -184,20 +193,45 @@ body {
     width: 2rem;
     fill: transparent; }
 
-.navigation {
-  border-color: #2A2A2A; }
-
-.nav__logo-box {
-  max-width: 8rem; }
-
-.nav__item:not(:last-child) {
-  margin-right: 4rem; }
-
 .tools__service-header {
   max-width: 15.5rem; }
 
 .tools__service-decor {
   bottom: -0.25rem; }
+
+.projects__header {
+  max-width: 24.25rem; }
+
+.projects__carousel-arrow:focus {
+  outline: none; }
+
+.projects__carousel-arrow svg:hover {
+  fill: #2A2A2A; }
+
+.projects__carousel-arrow:focus svg {
+  fill: #2A2A2A; }
+
+.projects__project {
+  max-width: 34rem; }
+  .projects__project:not(:last-child) {
+    margin-right: 2rem; }
+  .projects__project:focus, .projects__project:hover {
+    box-shadow: 0.5rem 0.5rem #2A2A2A; }
+  .projects__project:focus {
+    outline: none; }
+
+.projects__project:focus .projects__carousel-link svg,
+.projects__project:hover .projects__carousel-link svg {
+  fill: #2A2A2A; }
+
+.projects__carousel-link {
+  border: solid 0.25rem #2A2A2A;
+  border-top: 0;
+  padding: 1.5rem; }
+
+.projects__project:focus .projects__project-arrow,
+.projects__project:hover .projects__project-arrow {
+  transform: rotate(-45deg); }
 
 /*! TACHYONS v4.12.0 | http://tachyons.io */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
