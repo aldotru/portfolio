@@ -1,0 +1,23 @@
+.footer {
+
+  &__item {
+    
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+  }
+
+  &__social-item {
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+  }
+
+  &__social-icon {
+    max-width: 2rem;
+  }
+
+}
