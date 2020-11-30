@@ -1,0 +1,106 @@
+.hero {
+
+  &__text,
+  &__cta-wrap {
+    max-width: 28.125rem;
+  }
+
+  &__link {
+    max-width: 15rem;
+
+    &:focus {
+      @include outline-none;
+    }
+
+    &:hover &-span svg,
+    &:focus &-span svg {
+      fill: $black;
+    }
+
+    &-span svg  {
+      height: auto;
+      width: 2rem;
+      fill: transparent;
+    }
+
+  }
+
+}
+
+.tools {
+
+  &__service {
+
+    &-header {
+      max-width: 15.5rem;
+    }
+
+    &-decor {
+      bottom: -0.25rem;
+    }
+
+  }
+
+}
+
+.projects {
+
+  &__header {
+    max-width: 24.25rem;
+  }
+
+  &__carousel-arrow {
+
+    &:focus {
+      @include outline-none;
+    }
+
+  }
+
+  &__carousel-arrow svg {
+    
+    &:hover {
+      fill: $black;
+    }
+
+  }
+
+  &__carousel-arrow:focus svg {
+    fill: $black;
+  }
+
+  &__project {
+    max-width: 34rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:focus,
+    &:hover {
+      @include box-shadow;
+    }
+
+    &:focus {
+      @include outline-none;
+    }
+
+  }
+
+  &__project:focus &__carousel-link svg,
+  &__project:hover &__carousel-link svg {
+    fill: $black;
+  }
+
+  &__carousel-link {
+    border: solid 0.25rem $black;
+    border-top: 0;
+    padding: 1.5rem;
+  }
+
+  &__project:focus &__project-arrow,
+  &__project:hover &__project-arrow {
+    transform: rotate(-45deg);
+  }
+
+}
