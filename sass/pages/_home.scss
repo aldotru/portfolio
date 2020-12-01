@@ -116,3 +116,51 @@
   }
 
 }
+
+.playground {
+
+  &__projects {
+    display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 2rem 1rem;
+  }
+
+  &__project-arrow:focus svg {
+    fill: $black;
+  }
+
+  &__project {
+    max-width: 34rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:focus,
+    &:hover {
+      @include box-shadow;
+    }
+
+    &:focus {
+      @include outline-none;
+    }
+
+  }
+
+  &__project:focus &__link-wrapper svg,
+  &__project:hover &__link-wrapper svg {
+    fill: $black;
+  }
+
+  &__link-wrapper {
+    border: solid 0.25rem $black;
+    border-top: 0;
+    padding: 1rem;
+  }
+
+  &__project:focus &__project-arrow,
+  &__project:hover &__project-arrow {
+    transform: rotate(-45deg);
+  }
+
+}
