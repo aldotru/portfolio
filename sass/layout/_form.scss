@@ -1,0 +1,29 @@
+.contact {
+
+  &__input {
+    background-color: $white;
+    border-color: $black;
+
+    &:hover,
+    &:focus {
+      @include box-shadow;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &--ta {
+      resize: vertical;
+      min-height: 10rem;
+    }
+
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+}
