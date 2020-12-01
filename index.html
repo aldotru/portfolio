@@ -68,6 +68,7 @@
                         <span class="browser__btn browser__btn--green pa1 bg-green dib ba bw2 br-100 mr2"></span>
                         <span class="browser__btn browser__btn--red pa1 bg-red dib ba bw2 br-100"></span>
                     </div>
+                    <!-- todo: export hero image to browser's size -->
                     <img src="assets/img/aldo-hero.jpg" alt="Aldo's portrait working with laptop on poof" class="hero__img bl br bb bw2">
                 </div>  
             </div>
@@ -195,6 +196,42 @@
     <!-- playground -->
     <!-- todo: develop playground layout -->
     <!-- form -->
+    <section id="contact" class="form pv5">
+        <div class="container">
+            <div class="contact__row flex justify-between">
+                <div class="contact__details w-50 mr4">
+                    <h2 class="contact__header f2 lh-solid mb4">Ready to get started on that cool project? <span class="contact__header-span underline">Drop me a message!</span></h2>
+                    <p class="contact__info">Feel free to fill out the form and once I learn a bit more about your project’s ideas, goals and general overview, I’ll send you a proposal on how we can get started with it!</p>
+                </div>
+                <div class="contact__form-wrapper w-50">
+                    <form action="GET" class="contact__form">
+                        <div class="contact__input-box mb3">
+                            <label for="name" class="contact__label f3 db mb2">Name:</label>
+                            <input type="text" name="name" id="name" class="contact__input w-100 pa2 ba bw2" placeholder="Buzz Lightyear" required>
+                        </div>
+                        <div class="contact__input-box mb3">
+                            <label for="email" class="contact__label f3 db mb2">Email:</label>
+                            <input type="email" name="email" id="email" class="contact__input w-100 pa2 ba bw2" placeholder="buzz@toystory.com" required>
+                        </div>
+                        <div class="contact__input-box mb3">
+                            <label for="phone" class="contact__label f3 db mb2">Phone:</label>
+                            <input type="tel" name="name" id="phone" class="contact__input w-100 pa2 ba bw2" placeholder="(123) 456-7890" numeric required>
+                        </div>
+                        <div class="contact__input-box mb3">
+                            <label for="text" class="contact__label f3 db mb2">Message:</label>
+                            <textarea name="text" id="text" class="contact__input contact__input--ta w-100 pa2 ba bw2" placeholder="I’d like to work on an amazing project with you..." required></textarea>
+                        </div>
+                        <button class="btn contact__btn">
+                            <div class="btn__box">
+                                <div class="btn__content">Get a quote</div>
+                                <div class="btn__shadow button-size"></div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- todo: develop form layout + connect with Netlify forms -->
     <!-- footer -->
     <footer class="footer bt bw2 pv3">
