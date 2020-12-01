@@ -5,4 +5,20 @@
     @include box-shadow;
   }
 
+  &__btn {
+
+    &--yellow {
+      background-color: $yellow;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+
+    &--red {
+      background-color: $red;
+    }
+
+  }
+
 }
