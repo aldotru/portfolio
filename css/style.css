@@ -224,6 +224,20 @@ body {
     width: 2rem;
     fill: transparent; }
 
+.marquee {
+  overflow: hidden; }
+  .marquee__link:hover, .marquee__link:focus {
+    background-color: #2A2A2A;
+    color: #FAFAFA; }
+  .marquee__text {
+    margin-right: 3rem; }
+
+.companies__logos:hover .companies__logo {
+  opacity: 0.35; }
+
+.companies__logos:hover .companies__logo:hover {
+  opacity: 1; }
+
 .tools__service-header {
   max-width: 15.5rem; }
 
@@ -233,14 +247,23 @@ body {
 .projects__header {
   max-width: 24.25rem; }
 
-.projects__carousel-arrow:focus {
-  outline: none; }
+.projects__carousel-arrow {
+  cursor: pointer;
+  padding: 0; }
+  .projects__carousel-arrow:focus {
+    outline: none; }
 
 .projects__carousel-arrow svg:hover {
   fill: #2A2A2A; }
 
 .projects__carousel-arrow:focus svg {
   fill: #2A2A2A; }
+
+.projects__carousel .slick-current {
+  box-shadow: 0.5rem 0.5rem #2A2A2A; }
+
+.projects__carousel .slick-list {
+  padding: 0 0 !important; }
 
 .projects__project {
   max-width: 34rem; }
@@ -268,9 +291,40 @@ body {
   background-image: url("../assets/img/bg-smileys.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 55% 20%; }
+  background-position: 55% 12%; }
   .banner__header {
-    max-width: 25rem; }
+    max-width: 35rem; }
+
+.testimonials__box {
+  max-width: 46rem; }
+
+.testimonials__quote-icon {
+  top: 0;
+  left: 0;
+  transform: translate(-35%, -35%); }
+
+.testimonials__arrow {
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  top: 50%;
+  transform: translateY(30%); }
+  .testimonials__arrow:focus {
+    outline: solid 0.25rem #2A2A2A;
+    outline-offset: 0.25rem; }
+  .testimonials__arrow--left {
+    left: 0; }
+  .testimonials__arrow--right {
+    right: 0; }
+
+.testimonials__carousel-box:focus {
+  outline: none; }
+
+.testimonials .slick-track {
+  display: flex; }
+
+.testimonials .slick-list {
+  padding: 0 !important; }
 
 .playground__projects {
   display: grid;
