@@ -27,6 +27,37 @@
 
 }
 
+.marquee {
+  overflow: hidden;
+  
+  &__link {
+ 
+    &:hover,
+    &:focus {
+      background-color: $black;
+      color: $white;
+    }
+  
+  }
+
+  &__text {
+    margin-right: 3rem;
+  }
+
+}
+
+.companies {
+
+  &__logos:hover &__logo {
+    opacity: 0.35;
+  }
+
+  &__logos:hover &__logo:hover {
+    opacity: 1;
+  }
+
+}
+
 .tools {
 
   &__service {
@@ -50,6 +81,8 @@
   }
 
   &__carousel-arrow {
+    cursor: pointer;
+    padding: 0;
 
     &:focus {
       @include outline-none;
@@ -67,6 +100,18 @@
 
   &__carousel-arrow:focus svg {
     fill: $black;
+  }
+
+  &__carousel {
+    
+    .slick-current {
+      @include box-shadow;
+    }
+
+    .slick-list {
+      padding: 0 0 !important;
+    }
+
   }
 
   &__project {
@@ -109,10 +154,66 @@
   background-image: url("../assets/img/bg-smileys.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 55% 20%;
+  background-position: 55% 12%;
   
   &__header {
-    max-width: 25rem;
+    max-width: 35rem;
+  }
+
+}
+
+.testimonials {
+
+  &__box {
+    max-width: 46rem;
+  }
+
+  &__quote {
+
+    &-icon {
+      top: 0;
+      left: 0;
+      transform: translate(-35%, -35%);
+    }
+
+  }
+
+  &__arrow {
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    top: 50%;
+    transform: translateY(30%);
+
+    &:focus {
+      outline: solid 0.25rem $black;
+      outline-offset: 0.25rem;
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+
+  }
+
+  &__carousel-box {
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-list {
+    padding: 0 !important;
   }
 
 }
