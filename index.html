@@ -75,9 +75,24 @@
         </div>
     </section>
     <!-- marquee -->
-    <!-- todo: remember to add marque3000 js  -->
+    <section id="marquee" class="marquee bb bw2">
+        <a href="#contact" class="marquee__link pv3 marquee3k is-init" data-speed="1.5" data-reverse="true">
+            <span class="marquee__text f3">available for freelance projects 💻🤘</span>
+        </a>
+    </section>
     <!-- companies -->
-    <!-- todo: remember to add companies logos  -->
+    <section id="companies" class="companies pv5 bb bw2">
+        <div class="container">
+            <h2 class="companies__header lh-solid f2 tc mb5">Trusted by <span class="comapnies__header-span db">these companies</span></h2>
+            <div class="companies__logos flex justify-between items-center">
+                <!-- todo: update companies logos -->
+                <img src="assets/img/google-logo.svg" alt="Google logo" class="companies__logo">
+                <img src="assets/img/google-logo.svg" alt="Google logo" class="companies__logo">
+                <img src="assets/img/google-logo.svg" alt="Google logo" class="companies__logo">
+                <img src="assets/img/google-logo.svg" alt="Google logo" class="companies__logo">
+            </div>
+        </div>
+    </section>
     <!-- tools -->
     <section id="tools" class="tools pv6 bb bw2">
         <div class="container">
@@ -99,75 +114,130 @@
                     <!-- custom responsive websites -->
                     <div class="tools__service browser__shadow w-50 pt4 pb6 ph4 ba bw2 relative mr4">
                         <div class="tools__service-icons flex flex-row justify-center mb4">
-                            <img src="assets/img/html-icon.svg" alt="HTML5 outlined icon"
-                                class="tools__service-icon mr3">
+                            <img src="assets/img/html-icon.svg" alt="HTML5 outlined icon" class="tools__service-icon mr3">
                             <img src="assets/img/css-icon.svg" alt="CSS3 outlined icon" class="tools__service-icon mr3">
                             <img src="assets/img/js-icon.svg" alt="JavaScript outlined icon" class="tools__service-icon">
                         </div>
                         <h3 class="tools__service-header f3 tc mb3 center">Custom Repsonsive Websites</h3>
-                        <p class="tools__service-desc">Good ol’ plain HTML, CSS and JavaScript websites developed from
-                            scratch, implementing semantic tags for better usability, and accessible for everyone</p>
-                        <img src="assets/img/responsive-browser-icon.svg" alt="Responsive browser icon"
-                            class="tools__service-decor absolute right-2">
+                        <p class="tools__service-desc">Good ol’ plain HTML, CSS and JavaScript websites developed from scratch, implementing semantic tags for better usability, and accessible for everyone</p>
+                        <img src="assets/img/responsive-browser-icon.svg" alt="Responsive browser icon" class="tools__service-decor absolute right-2">
                     </div>
                     <!-- wordpress development -->
                     <div class="tools__service browser__shadow w-50 pt4 pb6 ph4 ba bw2 relative">
                         <div class="tools__service-icons flex flex-row justify-center mb4">
-                            <img src="assets/img/wordpress-icon.svg" alt="WordPress outlined icon"
-                                class="tools__service-icon mr3">
-                            <img src="assets/img/woocommerce-icon.svg" alt="WooCommerce outlined icon"
-                                class="tools__service-icon mr3">
+                            <img src="assets/img/wordpress-icon.svg" alt="WordPress outlined icon" class="tools__service-icon mr3">
+                            <img src="assets/img/woocommerce-icon.svg" alt="WooCommerce outlined icon" class="tools__service-icon mr3">
                         </div>
                         <h3 class="tools__service-header f3 tc mb3 center">WordPress Development</h3>
-                        <p class="tools__service-desc">Using WordPress’s flexibility to power up your website into a
-                            manageable CMS, as well as developing an e-commerce solution with WooCommerce</p>
-                        <img src="assets/img/ecommerce-browser-icon.svg" alt="Responsive browser icon"
-                            class="tools__service-decor absolute right-2">
+                        <p class="tools__service-desc">Using WordPress’s flexibility to power up your website into a manageable CMS, as well as developing an e-commerce solution with WooCommerce</p>
+                        <img src="assets/img/ecommerce-browser-icon.svg" alt="Responsive browser icon" class="tools__service-decor absolute right-2">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- projects -->
-    <section id="projects" class="projects pv6 bb bw2">
+    <section id="projects" class="projects pv6 bb bw2 overflow-hidden">
         <div class="container">
             <h2 class="projects__header f2 lh-solid center tc mb4">These are some cool projects I've worked on</h2>
             <div class="projects__carousel-arrows flex justify-end items-center mb4">
-                <a href="#" class="projects__carousel-arrow projects__carousel-arrow--left mr3">
+                <button class="projects__carousel-arrow projects__carousel-arrow--left mr3 bg-transparent bw0">
                     <svg width="68" height="55" viewBox="0 0 68 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M27.6016 53L2 27.5L27.6016 2L34.3888 8.76228L20.3744 22.7203H66V32.2828H20.3776L34.3888 46.2393L27.6016 53Z" stroke="#2D2D2D" stroke-width="2.78967" stroke-miterlimit="10" stroke-linecap="round" />
                     </svg>
-                </a>
-                <a href="#" class="projects__carousel-arrow projects__carousel-arrow--left">
+                </button>
+                <button class="projects__carousel-arrow projects__carousel-arrow--right bg-transparent bw0">
                     <svg width="68" height="55" viewBox="0 0 68 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M40.3984 53L66 27.5L40.3984 2L33.6112 8.76228L47.6256 22.7203H2V32.2828H47.6224L33.6112 46.2393L40.3984 53Z" stroke="#2D2D2D" stroke-width="2.78967" stroke-miterlimit="10" stroke-linecap="round" />
                     </svg>
-                </a>
+                </button>
             </div>
-            <!-- todo: import slick carousel plugin + add remaining projects -->
-            <div class="projects__carousel mb5">
-                <!-- project 1 -->
-                <a href="#" class="projects__project">
-                    <div class="browser pv3 ph3 ba bw2 flex flex-row justify-start items-center">
-                        <span class="browser__btn browser__btn--yellow pa1 dib ba bw2 br-100 mr2"></span>
-                        <span class="browser__btn browser__btn--green pa1 dib ba bw2 br-100 mr2"></span>
-                        <span class="browser__btn browser__btn--red pa1 dib ba bw2 br-100"></span>
-                    </div>
-                    <img src="assets/img/aldo-hero.jpg" alt="Project 1" class="projects__project-img w-100 bl br bb bw2">
-                    <div class="projects__carousel-link flex justify-between items-center">
-                        <h3 class="projects__project-header">Project name</h3>
-                        <p class="projects__project-link flex justify-between items-center">
-                            see project
-                            <span class="projects__project-arrow ml3">
-                                <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
-                                </svg>
-                            </span>
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="projects__cta tc">
+        </div>
+        <div class="projects__carousel mb4 pb4 overflow-hidden">
+            <!-- todo: import project's imgs -->
+            <!-- project 1 -->
+            <a href="#" class="projects__project">
+                <div class="browser pv3 ph3 ba bw2 flex flex-row justify-start items-center">
+                    <span class="browser__btn browser__btn--yellow pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--green pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--red pa1 dib ba bw2 br-100"></span>
+                </div>
+                <img src="assets/img/aldo-hero.jpg" alt="Project 1" class="projects__project-img w-100 bl br bb bw2">
+                <div class="projects__carousel-link flex justify-between items-center">
+                    <h3 class="projects__project-header">Name 1</h3>
+                    <p class="projects__project-link flex justify-between items-center">
+                        see project
+                        <span class="projects__project-arrow ml3">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+            </a>
+            <!-- project 2 -->
+            <a href="#" class="projects__project">
+                <div class="browser pv3 ph3 ba bw2 flex flex-row justify-start items-center">
+                    <span class="browser__btn browser__btn--yellow pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--green pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--red pa1 dib ba bw2 br-100"></span>
+                </div>
+                <img src="assets/img/aldo-hero.jpg" alt="Project 1" class="projects__project-img w-100 bl br bb bw2">
+                <div class="projects__carousel-link flex justify-between items-center">
+                    <h3 class="projects__project-header">Name 2</h3>
+                    <p class="projects__project-link flex justify-between items-center">
+                        see project
+                        <span class="projects__project-arrow ml3">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+            </a>
+            <!-- project 3 -->
+            <a href="#" class="projects__project">
+                <div class="browser pv3 ph3 ba bw2 flex flex-row justify-start items-center">
+                    <span class="browser__btn browser__btn--yellow pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--green pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--red pa1 dib ba bw2 br-100"></span>
+                </div>
+                <img src="assets/img/aldo-hero.jpg" alt="Project 1" class="projects__project-img w-100 bl br bb bw2">
+                <div class="projects__carousel-link flex justify-between items-center">
+                    <h3 class="projects__project-header">Name 3</h3>
+                    <p class="projects__project-link flex justify-between items-center">
+                        see project
+                        <span class="projects__project-arrow ml3">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+            </a>
+            <!-- project 4 -->
+            <a href="#" class="projects__project">
+                <div class="browser pv3 ph3 ba bw2 flex flex-row justify-start items-center">
+                    <span class="browser__btn browser__btn--yellow pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--green pa1 dib ba bw2 br-100 mr2"></span>
+                    <span class="browser__btn browser__btn--red pa1 dib ba bw2 br-100"></span>
+                </div>
+                <img src="assets/img/aldo-hero.jpg" alt="Project 1" class="projects__project-img w-100 bl br bb bw2">
+                <div class="projects__carousel-link flex justify-between items-center">
+                    <h3 class="projects__project-header">Name 4</h3>
+                    <p class="projects__project-link flex justify-between items-center">
+                        see project
+                        <span class="projects__project-arrow ml3">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                            </svg>
+                        </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="container tc">
+            <div class="projects__cta">
                 <a href="#" class="btn">
                     <div class="btn__box">
                         <div class="btn__content">See all projects</div>
@@ -180,7 +250,7 @@
     <!-- banner -->
     <section class="banner pv5 bb bw2">
         <div class="container">
-            <h2 class="banner__header f2 tc center mb4">Can’t wait any longer to start with your project?<span class="db">Let’s do it! 🤘</span></h2>
+            <h2 class="banner__header f1 tc center mb4">Can’t wait any longer to start with your project?<span class="db">Let’s do it! 🤘</span></h2>
             <div class="banner__cta tc">
                 <a href="#contact" class="btn">
                     <div class="btn__box">
@@ -192,13 +262,40 @@
         </div>
     </section>
     <!-- testimonials -->
-    <!-- todo: develop testimonials layout -->
+    <section id="testimonials" class="testimonials pv6 bb bw2">
+        <div class="container relative">
+            <h2 class="testimonials__header lh-solid f2 tc mb5">Not convinced yet? <span class="testimonials__header-span db">Check out what people have to say</span></h2>
+            <!-- testimonial's carousel buttons -->
+            <button class="testimonials__arrow testimonials__arrow--left absolute">
+                <img src="assets/img/left-arrow-square.svg" alt="Left arrow inside black box" class="testimonials__arrow-icon">
+            </button>
+            <button class="testimonials__arrow testimonials__arrow--right absolute">
+                <img src="assets/img/right-arrow-square.svg" alt="Right arrow inside black box" class="testimonials__arrow-icon">
+            </button>
+            <!-- testimonials box -->
+            <div class="testimonials__box relative center pv5 ph6 ba bw2">
+                <img src="assets/img/quote-icon.svg" alt="Quote icon" class="testimonials__quote-icon absolute">
+                <div class="testimonials__carousel overflow-hidden">
+                    <div class="testimonials__carousel-box">
+                        <p class="testmimonials__quote f2 tc mb4">Working with Aldo was great! Great communication, simple, clean work, and always on time for delivering work deadlines</p>
+                        <h3 class="testimonials__quote-person f3 tc mb1">Julia Heesen</h3>
+                        <span class="testimonials__quote-position f4 tc dib w-100">Head of Marketing @PredictableRevenue</span>
+                    </div>
+                    <div class="testimonials__carousel-box">
+                        <p class="testmimonials__quote f2 tc mb4">Aldo is a skilled front end developer, and eager to learn new things. He is a proactive person and good fella. Enjoyed working with him.</p>
+                        <h3 class="testimonials__quote-person f3 tc mb1">Jese Reyes</h3>
+                        <span class="testimonials__quote-position f4 tc dib w-100">Project Manager @CondorWeb</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- playground -->
     <section id="playground" class="playground pv6 bb bw2">
         <div class="container">
             <div class="playground__row flex justify-between">
                 <div class="playground__details w-30 mr4">
-                    <h2 class="playground__header f2 lh-solid mb4">Keeping skills sharp <span class="playground__header-span underline">and a creative mindset</span></h2>
+                    <h2 class="playground__header f2 lh-solid mb4">Keeping skills sharp and a creative mindset</h2>
                     <p class="playground__info mb4">This is where I like to do some coding & design challenges to implement new ideas and techniques, as well as just doodling around for fun</p>
                     <a href="#playground" class="btn">
                         <div class="btn__box">
@@ -222,9 +319,7 @@
                                 see project
                                 <span class="playground__project-arrow ml3">
                                     <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z"
-                                            stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                                        <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
                                     </svg>
                                 </span>
                             </p>
@@ -244,9 +339,7 @@
                                 see project
                                 <span class="playground__project-arrow ml3">
                                     <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z"
-                                            stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                                        <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
                                     </svg>
                                 </span>
                             </p>
@@ -266,9 +359,7 @@
                                 see project
                                 <span class="playground__project-arrow ml3">
                                     <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z"
-                                            stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                                        <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
                                     </svg>
                                 </span>
                             </p>
@@ -288,9 +379,7 @@
                                 see project
                                 <span class="playground__project-arrow ml3">
                                     <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z"
-                                            stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
+                                        <path d="M31.9145 19.0925L23.196 10.374L27.3055 6.26444L43.0262 21.9851L27.273 37.7383L23.1718 33.6371L31.9107 24.8982L4.87404 24.9256L4.87923 19.1199L31.9145 19.0925Z" stroke="#2D2D2D" stroke-width="1.60701" stroke-miterlimit="10" />
                                     </svg>
                                 </span>
                             </p>
@@ -377,7 +466,10 @@
     </footer>
 
     <!-- scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/marquee3000/marquee3k.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/marquee3k.js"></script>
+    <script src="js/slick.js"></script>
 </body>
 </html>
