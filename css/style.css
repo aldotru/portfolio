@@ -259,11 +259,17 @@ body {
 .projects__carousel-arrow:focus svg {
   fill: #2A2A2A; }
 
-.projects__carousel .slick-current {
-  box-shadow: 0.5rem 0.5rem #2A2A2A; }
-
 .projects__carousel .slick-list {
   padding: 0 0 !important; }
+
+.projects__carousel .slick-track {
+  display: flex; }
+
+.projects__carousel .slick-slide {
+  margin-right: 1.5rem; }
+
+.projects__carousel .slick-current {
+  box-shadow: 0.5rem 0.5rem #2A2A2A; }
 
 .projects__project {
   max-width: 34rem; }
