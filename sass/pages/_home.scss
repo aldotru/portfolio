@@ -104,12 +104,20 @@
 
   &__carousel {
     
-    .slick-current {
-      @include box-shadow;
-    }
-
     .slick-list {
       padding: 0 0 !important;
+    }
+
+    .slick-track {
+      display: flex;
+    }
+
+    .slick-slide {
+      margin-right: 1.5rem;
+    }
+
+    .slick-current {
+      @include box-shadow;
     }
 
   }
