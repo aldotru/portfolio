@@ -1,5 +1,6 @@
-const $ = require('jquery');
-const Marquee3k = require('marquee3000');
+const $ = require("jquery");
+const Marquee3k = require("marquee3000");
+const slickCarousel = require("slick-carousel");
 
 // Initializing marquee
 Marquee3k.init();
