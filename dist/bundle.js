@@ -8,7 +8,7 @@ Marquee3k.init();
 
 // Slick carousel options
 // Projects carousel
-$('.projects__carousel').slick({
+$(".projects__carousel").slick({
   autoplay: true,
   autoplaySpeed: 7500,
   arrows: true,
@@ -24,22 +24,23 @@ $('.projects__carousel').slick({
   nextArrow: $('.projects__carousel-arrow--right'),
   prevArrow: $('.projects__carousel-arrow--left')
 });
+
 // Testimonials carousel
-$('.testimonials__carousel').slick({
-  autoplay: true,
-  autoplaySpeed: 7500,
-  arrows: true,
-  centerMode: true,
-  draggable: true,
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  speed: 300,
-  // Moving next/previous buttons outside the slick wrapper
-  // @type {object} DOM node
-  nextArrow: $('.testimonials__arrow--right'),
-  prevArrow: $('.testimonials__arrow--left')
-});
+// $(".testimonials__carousel").slick({
+//   autoplay: true,
+//   autoplaySpeed: 7500,
+//   arrows: true,
+//   centerMode: true,
+//   draggable: true,
+//   infinite: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   speed: 300,
+//   // Moving next/previous buttons outside the slick wrapper
+//   // @type {object} DOM node
+//   nextArrow: $('.testimonials__arrow--right'),
+//   prevArrow: $('.testimonials__arrow--left')
+// });
 },{"jquery":2,"marquee3000":3,"slick-carousel":4}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.5.1
