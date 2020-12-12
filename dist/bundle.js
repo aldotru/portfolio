@@ -10,7 +10,7 @@ Marquee3k.init();
 // Projects carousel
 $(".projects__carousel").slick({
   autoplay: true,
-  autoplaySpeed: 7500,
+  autoplaySpeed: 5000,
   arrows: true,
   centerMode: true,
   draggable: true,
@@ -28,7 +28,7 @@ $(".projects__carousel").slick({
 // Testimonials carousel
 $(".testimonials__carousel").slick({
   autoplay: true,
-  autoplaySpeed: 7500,
+  autoplaySpeed: 5000,
   arrows: true,
   centerMode: true,
   draggable: true,
