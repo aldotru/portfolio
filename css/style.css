@@ -231,12 +231,14 @@ body {
     color: #FAFAFA; }
   .marquee__text {
     margin-right: 3rem; }
+  .marquee__emoji {
+    display: inline-block;
+    max-width: 2rem; }
+    .marquee__emoji--laptop {
+      margin-left: 0.5rem; }
 
-.companies__logos:hover .companies__logo {
-  opacity: 0.35; }
-
-.companies__logos:hover .companies__logo:hover {
-  opacity: 1; }
+.companies__logo--prana {
+  max-width: 8.75rem; }
 
 .tools__service-header {
   max-width: 15.5rem; }

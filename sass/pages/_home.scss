@@ -44,16 +44,34 @@
     margin-right: 3rem;
   }
 
+  &__emoji {
+    display: inline-block;
+    max-width: 2rem;
+
+    &--laptop {
+      margin-left: 0.5rem;
+    }
+
+  }
+
 }
 
 .companies {
 
-  &__logos:hover &__logo {
-    opacity: 0.35;
-  }
+  // &__logos:hover &__logo {
+  //   opacity: 0.35;
+  // }
 
-  &__logos:hover &__logo:hover {
-    opacity: 1;
+  // &__logos:hover &__logo:hover {
+  //   opacity: 1;
+  // }
+
+  &__logo {
+
+    &--prana {
+      max-width: 8.75rem;
+    }
+
   }
 
 }
