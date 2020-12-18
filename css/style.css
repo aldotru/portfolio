@@ -230,6 +230,8 @@ body {
     background-color: #2A2A2A;
     color: #FAFAFA; }
   .marquee__text {
+    display: flex !important;
+    align-items: center;
     margin-right: 3rem; }
   .marquee__emoji {
     display: inline-block;
