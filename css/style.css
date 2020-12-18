@@ -233,7 +233,8 @@ body {
     margin-right: 3rem; }
   .marquee__emoji {
     display: inline-block;
-    max-width: 2rem; }
+    max-width: 2rem;
+    vertical-align: top; }
     .marquee__emoji--laptop {
       margin-left: 0.5rem; }
 
