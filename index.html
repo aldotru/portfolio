@@ -394,6 +394,7 @@
             </div>
         </div>
     </section>
+    <!-- todo: connect to Netlify forms -->
     <!-- form -->
     <section id="contact" class="form pv6">
         <div class="container">
@@ -403,7 +404,7 @@
                     <p class="contact__info">Feel free to fill out the form and once I learn a bit more about your project’s ideas, goals and general overview, I’ll send you a proposal on how we can get started with it!</p>
                 </div>
                 <div class="contact__form-wrapper w-50">
-                    <form action="GET" class="contact__form">
+                    <form class="contact__form" method="POST" netlify>
                         <div class="contact__input-box mb3">
                             <label for="name" class="contact__label f3 db pb2">Name:</label>
                             <input type="text" name="name" id="name" class="contact__input w-100 pa2 ba bw2" placeholder="Buzz Lightyear" required>
@@ -431,7 +432,6 @@
             </div>
         </div>
     </section>
-    <!-- todo: connect to Netlify forms -->
     <!-- footer -->
     <footer class="footer bt bw2 pv3">
         <div class="container">
