@@ -1,19 +1,9 @@
 const $ = require("jquery");
+const Marquee3k = require("marquee3000");
 const slickCarousel = require("slick-carousel");
-const marquee = require("jquery.marquee");
-// const Marquee3k = require("marquee3000");
 
-// Initializing marquee3000
-// Marquee3k.init();
-
-// jquery.marquee options
-$('.marquee').marquee({
-  duration: 10000,
-  gap: 50,
-  delayBeforeStart: 0,
-  direction: 'left',
-  duplicated: true
-});
+// Initializing marquee
+Marquee3k.init();
 
 // Slick carousel options
 // Projects carousel
