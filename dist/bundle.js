@@ -1,20 +1,10 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const $ = require("jquery");
+const Marquee3k = require("marquee3000");
 const slickCarousel = require("slick-carousel");
-const marquee = require("jquery.marquee");
-// const Marquee3k = require("marquee3000");
 
-// Initializing marquee3000
-// Marquee3k.init();
-
-// jquery.marquee options
-$('.marquee').marquee({
-  duration: 10000,
-  gap: 50,
-  delayBeforeStart: 0,
-  direction: 'left',
-  duplicated: true
-});
+// Initializing marquee
+Marquee3k.init();
 
 // Slick carousel options
 // Projects carousel
@@ -51,25 +41,7 @@ $(".testimonials__carousel").slick({
   nextArrow: $('.testimonials__arrow--right'),
   prevArrow: $('.testimonials__arrow--left')
 });
-},{"jquery":3,"jquery.marquee":2,"slick-carousel":4}],2:[function(require,module,exports){
-/**
- * jQuery.marquee - scrolling text like old marquee element
- * @author Aamir Afridi - aamirafridi(at)gmail(dot)com / http://aamirafridi.com/jquery/jquery-marquee-plugin
- */
-(function(f){f.fn.marquee=function(x){return this.each(function(){var a=f.extend({},f.fn.marquee.defaults,x),b=f(this),c,t,e=3,y="animation-play-state",p=!1,E=function(a,b,c){for(var e=["webkit","moz","MS","o",""],d=0;d<e.length;d++)e[d]||(b=b.toLowerCase()),a.addEventListener(e[d]+b,c,!1)},F=function(a){var b=[],c;for(c in a)a.hasOwnProperty(c)&&b.push(c+":"+a[c]);b.push();return"{"+b.join(",")+"}"},l={pause:function(){p&&a.allowCss3Support?c.css(y,"paused"):f.fn.pause&&c.pause();b.data("runningStatus",
-"paused");b.trigger("paused")},resume:function(){p&&a.allowCss3Support?c.css(y,"running"):f.fn.resume&&c.resume();b.data("runningStatus","resumed");b.trigger("resumed")},toggle:function(){l["resumed"==b.data("runningStatus")?"pause":"resume"]()},destroy:function(){clearTimeout(b.timer);b.find("*").addBack().unbind();b.html(b.find(".js-marquee:first").html())}};if("string"===typeof x)f.isFunction(l[x])&&(c||(c=b.find(".js-marquee-wrapper")),!0===b.data("css3AnimationIsSupported")&&(p=!0),l[x]());else{var u;
-f.each(a,function(c,d){u=b.attr("data-"+c);if("undefined"!==typeof u){switch(u){case "true":u=!0;break;case "false":u=!1}a[c]=u}});a.speed&&(a.duration=parseInt(b.width(),10)/a.speed*1E3);var v="up"==a.direction||"down"==a.direction;a.gap=a.duplicated?parseInt(a.gap):0;b.wrapInner('<div class="js-marquee"></div>');var h=b.find(".js-marquee").css({"margin-right":a.gap,"float":"left"});a.duplicated&&h.clone(!0).appendTo(b);b.wrapInner('<div style="width:100000px" class="js-marquee-wrapper"></div>');
-c=b.find(".js-marquee-wrapper");if(v){var k=b.height();c.removeAttr("style");b.height(k);b.find(".js-marquee").css({"float":"none","margin-bottom":a.gap,"margin-right":0});a.duplicated&&b.find(".js-marquee:last").css({"margin-bottom":0});var q=b.find(".js-marquee:first").height()+a.gap;a.startVisible&&!a.duplicated?(a._completeDuration=(parseInt(q,10)+parseInt(k,10))/parseInt(k,10)*a.duration,a.duration*=parseInt(q,10)/parseInt(k,10)):a.duration*=(parseInt(q,10)+parseInt(k,10))/parseInt(k,10)}else{var m=
-b.find(".js-marquee:first").width()+a.gap;var n=b.width();a.startVisible&&!a.duplicated?(a._completeDuration=(parseInt(m,10)+parseInt(n,10))/parseInt(n,10)*a.duration,a.duration*=parseInt(m,10)/parseInt(n,10)):a.duration*=(parseInt(m,10)+parseInt(n,10))/parseInt(n,10)}a.duplicated&&(a.duration/=2);if(a.allowCss3Support){h=document.body||document.createElement("div");var g="marqueeAnimation-"+Math.floor(1E7*Math.random()),A=["Webkit","Moz","O","ms","Khtml"],B="animation",d="",r="";h.style.animation&&
-(r="@keyframes "+g+" ",p=!0);if(!1===p)for(var z=0;z<A.length;z++)if(void 0!==h.style[A[z]+"AnimationName"]){h="-"+A[z].toLowerCase()+"-";B=h+B;y=h+y;r="@"+h+"keyframes "+g+" ";p=!0;break}p&&(d=g+" "+a.duration/1E3+"s "+a.delayBeforeStart/1E3+"s infinite "+a.css3easing,b.data("css3AnimationIsSupported",!0))}var C=function(){c.css("transform","translateY("+("up"==a.direction?k+"px":"-"+q+"px")+")")},D=function(){c.css("transform","translateX("+("left"==a.direction?n+"px":"-"+m+"px")+")")};a.duplicated?
-(v?a.startVisible?c.css("transform","translateY(0)"):c.css("transform","translateY("+("up"==a.direction?k+"px":"-"+(2*q-a.gap)+"px")+")"):a.startVisible?c.css("transform","translateX(0)"):c.css("transform","translateX("+("left"==a.direction?n+"px":"-"+(2*m-a.gap)+"px")+")"),a.startVisible||(e=1)):a.startVisible?e=2:v?C():D();var w=function(){a.duplicated&&(1===e?(a._originalDuration=a.duration,a.duration=v?"up"==a.direction?a.duration+k/(q/a.duration):2*a.duration:"left"==a.direction?a.duration+n/
-(m/a.duration):2*a.duration,d&&(d=g+" "+a.duration/1E3+"s "+a.delayBeforeStart/1E3+"s "+a.css3easing),e++):2===e&&(a.duration=a._originalDuration,d&&(g+="0",r=f.trim(r)+"0 ",d=g+" "+a.duration/1E3+"s 0s infinite "+a.css3easing),e++));v?a.duplicated?(2<e&&c.css("transform","translateY("+("up"==a.direction?0:"-"+q+"px")+")"),t={transform:"translateY("+("up"==a.direction?"-"+q+"px":0)+")"}):a.startVisible?2===e?(d&&(d=g+" "+a.duration/1E3+"s "+a.delayBeforeStart/1E3+"s "+a.css3easing),t={transform:"translateY("+
-("up"==a.direction?"-"+q+"px":k+"px")+")"},e++):3===e&&(a.duration=a._completeDuration,d&&(g+="0",r=f.trim(r)+"0 ",d=g+" "+a.duration/1E3+"s 0s infinite "+a.css3easing),C()):(C(),t={transform:"translateY("+("up"==a.direction?"-"+c.height()+"px":k+"px")+")"}):a.duplicated?(2<e&&c.css("transform","translateX("+("left"==a.direction?0:"-"+m+"px")+")"),t={transform:"translateX("+("left"==a.direction?"-"+m+"px":0)+")"}):a.startVisible?2===e?(d&&(d=g+" "+a.duration/1E3+"s "+a.delayBeforeStart/1E3+"s "+a.css3easing),
-t={transform:"translateX("+("left"==a.direction?"-"+m+"px":n+"px")+")"},e++):3===e&&(a.duration=a._completeDuration,d&&(g+="0",r=f.trim(r)+"0 ",d=g+" "+a.duration/1E3+"s 0s infinite "+a.css3easing),D()):(D(),t={transform:"translateX("+("left"==a.direction?"-"+m+"px":n+"px")+")"});b.trigger("beforeStarting");if(p){c.css(B,d);var h=r+" { 100%  "+F(t)+"}",l=c.find("style");0!==l.length?l.filter(":last").html(h):f("head").append("<style>"+h+"</style>");E(c[0],"AnimationIteration",function(){b.trigger("finished")});
-E(c[0],"AnimationEnd",function(){w();b.trigger("finished")})}else c.animate(t,a.duration,a.easing,function(){b.trigger("finished");a.pauseOnCycle?b.timer=setTimeout(w,a.delayBeforeStart):w()});b.data("runningStatus","resumed")};b.bind("pause",l.pause);b.bind("resume",l.resume);a.pauseOnHover&&(b.bind("mouseenter",l.pause),b.bind("mouseleave",l.resume));p&&a.allowCss3Support?w():b.timer=setTimeout(w,a.delayBeforeStart)}})};f.fn.marquee.defaults={allowCss3Support:!0,css3easing:"linear",easing:"linear",
-delayBeforeStart:1E3,direction:"left",duplicated:!1,duration:5E3,gap:20,pauseOnCycle:!1,pauseOnHover:!1,startVisible:!1}})(jQuery);
-
-},{}],3:[function(require,module,exports){
+},{"jquery":2,"marquee3000":3,"slick-carousel":4}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.5.1
  * https://jquery.com/
@@ -10943,6 +10915,205 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
+},{}],3:[function(require,module,exports){
+/**
+ * MARQUEE 3000 MARQUEE 3000 MARQUEE 3000 MARQUEE 3000 MARQUEE 3000
+ * http://github.com/ezekielaquino/marquee3000
+ * Marquees for the new millennium v1.0
+ * MIT License
+ */
+
+;(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define([], factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
+  } else {
+    root.Marquee3k = factory();
+  }
+}(this, function() {
+  'use strict';
+
+  let animationId = 0;
+
+  class Marquee3k {
+    constructor(element, options) {
+      this.element = element;
+      this.selector = options.selector;
+      this.speed = element.dataset.speed || 0.25;
+      this.pausable = element.dataset.pausable;
+      this.reverse = element.dataset.reverse;
+      this.paused = false;
+      this.parent = element.parentElement;
+      this.parentProps = this.parent.getBoundingClientRect();
+      this.content = element.children[0];
+      this.innerContent = this.content.innerHTML;
+      this.wrapStyles = '';
+      this.offset = 0;
+
+      this._setupWrapper();
+      this._setupContent();
+      this._setupEvents();
+
+      this.wrapper.appendChild(this.content);
+      this.element.appendChild(this.wrapper);
+    }
+
+    _setupWrapper() {
+      this.wrapper = document.createElement('div');
+      this.wrapper.classList.add('marquee3k__wrapper');
+      this.wrapper.style.whiteSpace = 'nowrap';
+    }
+
+    _setupContent() {
+      this.content.classList.add(`${this.selector}__copy`);
+      this.content.style.display = 'inline-block';
+      this.contentWidth = this.content.offsetWidth;
+
+      this.requiredReps = this.contentWidth > this.parentProps.width ? 2 : Math.ceil((this.parentProps.width - this.contentWidth) / this.contentWidth) + 1;
+
+      for (let i = 0; i < this.requiredReps; i++) {
+        this._createClone();
+      }
+
+      if (this.reverse) {
+        this.offset = this.contentWidth * -1;
+      }
+
+      this.element.classList.add('is-init');
+    }
+
+    _setupEvents() {
+      this.element.addEventListener('mouseenter', () => {
+        if (this.pausable) this.paused = true;
+      });
+
+      this.element.addEventListener('mouseleave', () => {
+        if (this.pausable) this.paused = false;
+      });
+    }
+
+    _createClone() {
+      const clone = this.content.cloneNode(true);
+      clone.style.display = 'inline-block';
+      clone.classList.add(`${this.selector}__copy`);
+      this.wrapper.appendChild(clone);
+    }
+
+    animate() {
+      if (!this.paused) {
+        const isScrolled = this.reverse ? this.offset < 0 : this.offset > this.contentWidth * -1;
+        const direction = this.reverse ? -1 : 1;
+        const reset = this.reverse ? this.contentWidth * -1 : 0;
+
+        if (isScrolled) this.offset -= this.speed * direction;
+        else this.offset = reset;
+
+        this.wrapper.style.whiteSpace = 'nowrap';
+        this.wrapper.style.transform = `translate(${this.offset}px, 0) translateZ(0)`;
+      }
+    }
+
+    _refresh() {
+      this.contentWidth = this.content.offsetWidth;
+    }
+
+    repopulate(difference, isLarger) {
+      this.contentWidth = this.content.offsetWidth;
+
+      if (isLarger) {
+        const amount = Math.ceil(difference / this.contentWidth) + 1;
+
+        for (let i = 0; i < amount; i++) {
+          this._createClone();
+        }
+      }
+    }
+
+    static refresh(index) {
+      MARQUEES[index]._refresh();
+    }
+
+    static pause(index) {
+      MARQUEES[index].paused = true;
+    }
+
+    static play(index) {
+      MARQUEES[index].paused = false;
+    }
+
+    static toggle(index) {
+      MARQUEES[index].paused = !MARQUEES[index].paused;
+    }
+
+    static refreshAll() {
+      for (let i = 0; i < MARQUEES.length; i++) {
+        MARQUEES[i]._refresh();
+      }
+    }
+
+    static pauseAll() {
+      for (let i = 0; i < MARQUEES.length; i++) {
+        MARQUEES[i].paused = true;
+      }
+    }
+
+    static playAll() {
+      for (let i = 0; i < MARQUEES.length; i++) {
+        MARQUEES[i].paused = false;
+      }
+    }
+
+    static toggleAll() {
+      for (let i = 0; i < MARQUEES.length; i++) {
+        MARQUEES[i].paused = !MARQUEES[i].paused;
+      }
+    }
+
+    static init(options = { selector: 'marquee3k' }) {
+      if (animationId) window.cancelAnimationFrame(animationId);
+
+      window.MARQUEES = [];
+      const marquees = Array.from(document.querySelectorAll(`.${options.selector}`));
+      let previousWidth = window.innerWidth;
+      let timer;
+
+      for (let i = 0; i < marquees.length; i++) {
+        const marquee = marquees[i];
+        const instance = new Marquee3k(marquee, options);
+        MARQUEES.push(instance);
+      }
+
+      animate();
+
+      function animate() {
+        for (let i = 0; i < MARQUEES.length; i++) {
+          MARQUEES[i].animate();
+        }
+        animationId = window.requestAnimationFrame(animate);
+      }
+
+      window.addEventListener('resize', () => {
+        clearTimeout(timer);
+
+        timer = setTimeout(() => {
+          const isLarger = previousWidth < window.innerWidth;
+          const difference = window.innerWidth - previousWidth;
+
+          for (let i = 0; i < MARQUEES.length; i++) {
+            MARQUEES[i].repopulate(difference, isLarger);
+          }
+
+          previousWidth = this.innerWidth;
+        }, 250);
+      });
+    }
+  }
+
+  return Marquee3k;
+
+}));
+
 },{}],4:[function(require,module,exports){
 /*
      _ _      _       _
@@ -13956,4 +14127,4 @@ return jQuery;
 
 }));
 
-},{"jquery":3}]},{},[1]);
+},{"jquery":2}]},{},[1]);
