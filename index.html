@@ -39,10 +39,10 @@
         </div>
     </div>
     <!-- hero -->
-    <section class="hero vh-75 flex items-center bb bw2">
+    <section class="hero pt5 vh-75-l flex items-center bb bw2 overflow-hidden overflow-visible-l">
         <div class="container">
-            <div class="hero__row flex flex-row justify-between items-center">
-                <div class="hero__info w-50 mr4">
+            <div class="hero__row flex flex-column flex-row-l justify-between items-center">
+                <div class="hero__info w-100 w-50-l mr4">
                     <h1 class="hero__header ma0 mb4 lh-solid f1">Helping startups achieve their revenue goals with <span class="hero__header-span tdu underline">high converting websites</span></h1>
                     <p class="hero__text mb4">Choosing the right set of modern technologies, and tools, to achieve your company’s goals & develop great user experience products for humans, like you!</p>
                     <div class="hero__cta-wrap flex flex-row justify-between items-center">
@@ -62,14 +62,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero__img-box browser__shadow w-50">
+                <div class="hero__img-box browser__shadow w-75-m w-50-l relative">
                     <div class="browser pv3 ph3 ba bw2 flex flex-row justify-start items-center">
                         <span class="browser__btn browser__btn--yellow pa1 dib ba bw2 br-100 mr2"></span>
                         <span class="browser__btn browser__btn--green pa1 dib ba bw2 br-100 mr2"></span>
                         <span class="browser__btn browser__btn--red pa1 dib ba bw2 br-100"></span>
                     </div>
                     <!-- todo: add responsive export hero image to browser's size -->
-                    <img src="assets/img/aldo-hero.jpg" alt="Aldo's portrait working with laptop on poof" class="hero__img bl br bb bw2">
+                    <img src="assets/img/aldo-hero.jpg" alt="Aldo's portrait working with laptop on poof" class="hero__img w-100 bl br bb bw2">
                 </div>  
             </div>
         </div>
@@ -88,19 +88,27 @@
     <section id="companies" class="companies pv5 bb bw2">
         <div class="container">
             <h2 class="companies__header lh-solid f2 tc mb5">Trusted by <span class="comapnies__header-span db">these companies</span></h2>
-            <div class="companies__logos flex justify-between items-center">
-                <img src="assets/img/servicios-logo.svg" class="companies__logo companies__logo--whirlpool" alt="Centro de Servicios Especializados Whirlpool logo">
-                <img src="assets/img/miranda-logo.svg" class="companies__logo companies__logo--miranda" alt="Miranda Abogados logo">
-                <img src="assets/img/pr-logo.svg" class="companies__logo companies__logo--pr" alt="Predictable Revenue logo">
-                <img src="assets/img/prana-logo.png" class="companies__logo companies__logo--prana" alt="Prana Boutique Hotel logo">
+            <div class="companies__logos flex-l justify-between items-center">
+                <div class="companies__logos-box">
+                    <img src="assets/img/servicios-logo.svg" class="companies__logo companies__logo--whirlpool" alt="Centro de Servicios Especializados Whirlpool logo">
+                </div>
+                <div class="companies__logos-box">
+                    <img src="assets/img/miranda-logo.svg" class="companies__logo companies__logo--miranda" alt="Miranda Abogados logo">
+                </div>
+                <div class="companies__logos-box">
+                    <img src="assets/img/pr-logo.svg" class="companies__logo companies__logo--pr" alt="Predictable Revenue logo">
+                </div>
+                <div class="companies__logos-box">
+                    <img src="assets/img/prana-logo.png" class="companies__logo companies__logo--prana" alt="Prana Boutique Hotel logo">
+                </div>
             </div>
         </div>
     </section>
     <!-- tools -->
-    <section id="tools" class="tools pv6 bb bw2">
+    <section id="tools" class="tools pv5 pv6-l bb bw2">
         <div class="container">
-            <div class="tools__row flex flex-row justify-between">
-                <div class="tools__info w-30 mr4">
+            <div class="tools__row flex flex-column flex-row-l justify-between">
+                <div class="tools__info w-100 w-75-m w-30-l mr4-l mb5 mb0-l">
                     <h2 class="tools__header f2 lh-solid mb4">Solving your problems with the right set of development
                         tools</h2>
                     <p class="tools__text mb4">Always looking to achieve amazing results applying best practices, whether
@@ -113,9 +121,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="tools__services w-70 flex flex-row justify-between">
+                <div class="tools__services w-100 w-70-l flex flex-column flex-row-m flex-row-l justify-between">
                     <!-- custom responsive websites -->
-                    <div class="tools__service browser__shadow w-50 pt4 pb6 ph4 ba bw2 relative mr4">
+                    <div class="tools__service browser__shadow w-100 w-50-m w-50-l pt4 pb6 ph4 ba bw2 relative mr0 mr4-m mr4-l mb4 mb0-m mb0-l">
                         <div class="tools__service-icons flex flex-row justify-center mb4">
                             <img src="assets/img/html-icon.svg" alt="HTML5 outlined icon" class="tools__service-icon mr3">
                             <img src="assets/img/css-icon.svg" alt="CSS3 outlined icon" class="tools__service-icon mr3">
@@ -126,7 +134,7 @@
                         <img src="assets/img/responsive-browser-icon.svg" alt="Responsive browser icon" class="tools__service-decor absolute right-2">
                     </div>
                     <!-- wordpress development -->
-                    <div class="tools__service browser__shadow w-50 pt4 pb6 ph4 ba bw2 relative">
+                    <div class="tools__service browser__shadow w-100 w-50-m w-50-l pt4 pb6 ph4 ba bw2 relative">
                         <div class="tools__service-icons flex flex-row justify-center mb4">
                             <img src="assets/img/wordpress-icon.svg" alt="WordPress outlined icon" class="tools__service-icon mr3">
                             <img src="assets/img/woocommerce-icon.svg" alt="WooCommerce outlined icon" class="tools__service-icon mr3">
@@ -140,7 +148,7 @@
         </div>
     </section>
     <!-- projects -->
-    <section id="projects" class="projects pv6 bb bw2 overflow-hidden">
+    <section id="projects" class="projects pv5 pv6-l bb bw2 overflow-hidden">
         <div class="container">
             <h2 class="projects__header f2 lh-solid center tc mb4">These are some cool projects I've worked on</h2>
             <div class="projects__carousel-arrows flex justify-end items-center mb4">
@@ -254,7 +262,7 @@
     <!-- banner -->
     <section class="banner pv5 bb bw2">
         <div class="container">
-            <h2 class="banner__header f1 tc center mb4">Can’t wait any longer to start with your project?<span class="db">Let’s do it! 🤘</span></h2>
+            <h2 class="banner__header f1 tc center mb4">Can’t wait any longer to start with your project?<span class="db">Let’s do it! <img src="assets/img/emoji-hand-rock.png" alt="Love hand emoji" class="banner__emoji"></span></h2>
             <div class="banner__cta tc">
                 <a href="#contact" class="btn">
                     <div class="btn__box">
@@ -266,7 +274,7 @@
         </div>
     </section>
     <!-- testimonials -->
-    <section id="testimonials" class="testimonials pv6 bb bw2">
+    <section id="testimonials" class="testimonials pv5 pv6-l bb bw2">
         <div class="container relative">
             <h2 class="testimonials__header lh-solid f2 tc mb5">Not convinced yet? <span class="testimonials__header-span db">Check out what people have to say</span></h2>
             <!-- testimonial's carousel buttons -->
@@ -295,13 +303,13 @@
         </div>
     </section>
     <!-- playground -->
-    <section id="playground" class="playground pv6 bb bw2">
+    <section id="playground" class="playground pv5 pv6-l bb bw2">
         <div class="container">
-            <div class="playground__row flex justify-between">
-                <div class="playground__details w-30 mr4">
+            <div class="playground__row flex flex-column flex-row-l justify-between">
+                <div class="playground__details w-100 w-75-m w-30-l mr0 mr4-l mb4 mb0-l">
                     <h2 class="playground__header f2 lh-solid mb4">Keeping skills sharp and a creative mindset</h2>
-                    <p class="playground__info mb4">This is where I like to do some coding & design challenges to implement new ideas and techniques, as well as just doodling around for fun</p>
-                    <!-- todo: bring cta back when playgound page is created -->
+                    <p class="playground__info">This is where I like to do some coding & design challenges to implement new ideas and techniques, as well as just doodling around for fun</p>
+                    <!-- todo: bring cta back when playground page is created -->
                     <!-- <a href="#playground" class="btn">
                         <div class="btn__box">
                             <div class="btn__content">Visit playground</div>
@@ -309,7 +317,7 @@
                         </div>
                     </a> -->
                 </div>
-                <div class="playground__projects w-70">
+                <div class="playground__projects w-100 w-70-l">
                     <!-- playground project 1 -->
                     <a href="#" class="playground__project w-100">
                         <div class="browser pv3 ph3 ba bw2 flex flex-row justify-start items-center">
