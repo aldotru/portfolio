@@ -25,6 +25,18 @@
 
   }
 
+  &__img-box {
+
+    @media only screen and (max-width: $tablet-land) {
+      bottom: -3rem;
+    }
+
+    @media only screen and (max-width: $tablet-port) {
+      width: 100% !important;
+    }
+
+  }
+
 }
 
 .marquee {
@@ -67,10 +79,44 @@
   //   opacity: 1;
   // }
 
+  &__logos {    
+
+    @media only screen and (max-width: $tablet-land) {
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem 2rem;
+        justify-items: center;
+    }
+
+  }
+
+  &__logos-box {
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+      
+      @media only screen and (max-width: $tablet-land) {
+        margin-right: 0;
+      }
+
+    }
+
+  }
+
   &__logo {
+    margin: 0 auto;
+    
+    @media only screen and (max-width: $tablet-land) {
+      max-width: 12rem;
+    }
 
     &--prana {
       max-width: 8.75rem;
+
+    @media only screen and (max-width: $tablet-land) {
+      max-width: 7rem;
+    }
+
     }
 
   }
@@ -187,6 +233,12 @@
     max-width: 35rem;
   }
 
+  &__emoji {
+    display: inline-block;
+    max-width: 3rem;
+    vertical-align: bottom;
+  }
+
 }
 
 .testimonials {
@@ -249,8 +301,18 @@
 
   &__projects {
     display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem 1rem;
+      
+    @media only screen and (max-width: 51.25em) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+      
+    @media only screen and (max-width: 41.25em) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+    }
+
   }
 
   &__project-arrow:focus svg {
@@ -262,6 +324,11 @@
 
     &:not(:last-child) {
       margin-right: 2rem;
+
+    @media only screen and (max-width: 51.25em) {
+      margin-right: 0;
+    }
+
     }
 
     &:focus,
@@ -284,6 +351,12 @@
     border: solid 0.25rem $black;
     border-top: 0;
     padding: 1rem;
+
+    @media only screen and (max-width: $tablet-land) {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
   }
 
   &__project:focus &__project-arrow,
