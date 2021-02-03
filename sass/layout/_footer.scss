@@ -1,23 +1,53 @@
 .footer {
+  &__row {
+    @media only screen and (max-width: $phone) {
+    }
+  }
+
+  &__box {
+    @media only screen and (max-width: $phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo-box {
+    @media only screen and (max-width: $phone) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list {
+    @media only screen and (max-width: $phone) {
+      margin-bottom: 1.5rem;
+      flex-direction: column;
+    }
+  }
 
   &__item {
-    
     &:not(:last-child) {
       margin-right: 2rem;
-    }
 
+      @media only screen and (max-width: $phone) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__social-list {
+    @media only screen and (max-width: $phone) {
+      justify-content: center;
+    }
   }
 
   &__social-item {
-
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
-
   }
 
   &__social-icon {
     max-width: 2rem;
   }
-
 }
