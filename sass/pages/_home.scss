@@ -1,8 +1,13 @@
 .hero {
-
   &__text,
   &__cta-wrap {
     max-width: 28.125rem;
+  }
+
+  &__text {
+    @media only screen and (max-width: $tablet-land) {
+      max-width: 100%;
+    }
   }
 
   &__link {
@@ -17,16 +22,18 @@
       fill: $black;
     }
 
-    &-span svg  {
+    &-span svg {
       height: auto;
       width: 2rem;
       fill: transparent;
     }
 
+    @media only screen and (max-width: $tablet-land) {
+      display: none !important;
+    }
   }
 
   &__img-box {
-
     @media only screen and (max-width: $tablet-land) {
       bottom: -3rem;
     }
@@ -34,22 +41,18 @@
     @media only screen and (max-width: $tablet-port) {
       width: 100% !important;
     }
-
   }
-
 }
 
 .marquee {
   overflow: hidden;
-  
+
   &__link {
- 
     &:hover,
     &:focus {
       background-color: $black;
       color: $white;
     }
-  
   }
 
   &__text {
@@ -64,13 +67,10 @@
     &--laptop {
       margin-left: 0.5rem;
     }
-
   }
-
 }
 
 .companies {
-
   // &__logos:hover &__logo {
   //   opacity: 0.35;
   // }
@@ -79,33 +79,28 @@
   //   opacity: 1;
   // }
 
-  &__logos {    
-
+  &__logos {
     @media only screen and (max-width: $tablet-land) {
       display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem 2rem;
-        justify-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem 2rem;
+      justify-items: center;
     }
-
   }
 
   &__logos-box {
-
     &:not(:last-child) {
       margin-right: 2rem;
-      
+
       @media only screen and (max-width: $tablet-land) {
         margin-right: 0;
       }
-
     }
-
   }
 
   &__logo {
     margin: 0 auto;
-    
+
     @media only screen and (max-width: $tablet-land) {
       max-width: 12rem;
     }
@@ -113,19 +108,35 @@
     &--prana {
       max-width: 8.75rem;
 
-    @media only screen and (max-width: $tablet-land) {
-      max-width: 7rem;
+      @media only screen and (max-width: $tablet-land) {
+        max-width: 7rem;
+      }
     }
-
-    }
-
   }
-
 }
 
 .tools {
+  &__services {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__service {
+    @media only screen and (max-width: $phone) {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      @media only screen and (max-width: $phone) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__info {
+      @media only screen and (max-width: $tablet-land) {
+        width: 100%;
+      }
+    }
 
     &-header {
       max-width: 15.5rem;
@@ -134,13 +145,10 @@
     &-decor {
       bottom: -0.25rem;
     }
-
   }
-
 }
 
 .projects {
-
   &__header {
     max-width: 24.25rem;
   }
@@ -152,15 +160,12 @@
     &:focus {
       @include outline-none;
     }
-
   }
 
   &__carousel-arrow svg {
-    
     &:hover {
       fill: $black;
     }
-
   }
 
   &__carousel-arrow:focus svg {
@@ -168,7 +173,6 @@
   }
 
   &__carousel {
-    
     .slick-list {
       padding: 0 0 !important;
     }
@@ -184,11 +188,14 @@
     .slick-current {
       @include box-shadow;
     }
-
   }
 
   &__project {
     max-width: 34rem;
+
+    @media only screen and (max-width: $phone) {
+      max-width: 26rem;
+    }
 
     &:not(:last-child) {
       margin-right: 2rem;
@@ -202,7 +209,6 @@
     &:focus {
       @include outline-none;
     }
-
   }
 
   &__project:focus &__carousel-link svg,
@@ -214,13 +220,17 @@
     border: solid 0.25rem $black;
     border-top: 0;
     padding: 1.5rem;
+
+    @media only screen and (max-width: $phone) {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
   }
 
   &__project:focus &__project-arrow,
   &__project:hover &__project-arrow {
     transform: rotate(-45deg);
   }
-
 }
 
 .banner {
@@ -228,7 +238,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 12%;
-  
+
   &__header {
     max-width: 35rem;
   }
@@ -237,131 +247,135 @@
     display: inline-block;
     max-width: 3rem;
     vertical-align: bottom;
+
+    @media only screen and (max-width: $phone) {
+      max-width: 2rem;
+    }
   }
 
-}
-
-.testimonials {
-
-  &__box {
-    max-width: 46rem;
-  }
-
-  &__quote {
-
-    &-icon {
-      top: 0;
-      left: 0;
-      transform: translate(-35%, -35%);
+  .testimonials {
+    &__box {
+      max-width: 46rem;
     }
 
-  }
-
-  &__arrow {
-    border: 0;
-    cursor: pointer;
-    padding: 0;
-    top: 50%;
-    transform: translateY(30%);
-
-    &:focus {
-      outline: solid 0.25rem $black;
-      outline-offset: 0.25rem;
+    &__quote {
+      &-icon {
+        top: 0;
+        left: 0;
+        transform: translate(-35%, -35%);
+      }
     }
 
-    &--left {
-      left: 0;
+    &__arrow {
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+      top: 50%;
+      transform: translateY(30%);
+
+      &:focus {
+        outline: solid 0.25rem $black;
+        outline-offset: 0.25rem;
+      }
+
+      &--left {
+        left: 0;
+      }
+
+      &--right {
+        right: 0;
+      }
     }
 
-    &--right {
-      right: 0;
+    &__carousel-box {
+      &:focus {
+        outline: none;
+      }
     }
 
-  }
-
-  &__carousel-box {
-
-    &:focus {
-      outline: none;
+    .slick-track {
+      display: flex;
     }
 
+    .slick-list {
+      padding: 0 !important;
+    }
   }
 
-  .slick-track {
-    display: flex;
-  }
+  .playground {
+    &__details {
+      @media only screen and (max-width: $tablet-land) {
+        width: 100%;
+      }
+    }
 
-  .slick-list {
-    padding: 0 !important;
-  }
-
-}
-
-.playground {
-
-  &__projects {
-    display: grid;
+    &__projects {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem 1rem;
-      
-    @media only screen and (max-width: 51.25em) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-      
-    @media only screen and (max-width: 41.25em) {
-      grid-template-columns: repeat(1, 1fr);
-      margin: 0 auto;
+
+      @media only screen and (max-width: 51.25em) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      @media only screen and (max-width: $phone) {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+      }
     }
 
+    &__project-arrow:focus svg {
+      fill: $black;
+    }
+
+    &__project {
+      max-width: 34rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+
+        @media only screen and (max-width: 51.25em) {
+          margin-right: 0;
+        }
+      }
+
+      &:focus,
+      &:hover {
+        @include box-shadow;
+      }
+
+      &:focus {
+        @include outline-none;
+      }
+    }
+
+    &__project:focus &__link-wrapper svg,
+    &__project:hover &__link-wrapper svg {
+      fill: $black;
+    }
+
+    &__link-wrapper {
+      border: solid 0.25rem $black;
+      border-top: 0;
+      padding: 1rem;
+
+      @media only screen and (max-width: $tablet-land) {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    &__project:focus &__project-arrow,
+    &__project:hover &__project-arrow {
+      transform: rotate(-45deg);
+    }
   }
+}
 
-  &__project-arrow:focus svg {
-    fill: $black;
-  }
-
-  &__project {
-    max-width: 34rem;
-
-    &:not(:last-child) {
-      margin-right: 2rem;
-
-    @media only screen and (max-width: 51.25em) {
-      margin-right: 0;
-    }
-
-    }
-
-    &:focus,
-    &:hover {
-      @include box-shadow;
-    }
-
-    &:focus {
-      @include outline-none;
-    }
-
-  }
-
-  &__project:focus &__link-wrapper svg,
-  &__project:hover &__link-wrapper svg {
-    fill: $black;
-  }
-
-  &__link-wrapper {
-    border: solid 0.25rem $black;
-    border-top: 0;
-    padding: 1rem;
-
+.contact {
+  &__details {
     @media only screen and (max-width: $tablet-land) {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
+      width: 100%;
     }
-
   }
-
-  &__project:focus &__project-arrow,
-  &__project:hover &__project-arrow {
-    transform: rotate(-45deg);
-  }
-
 }
