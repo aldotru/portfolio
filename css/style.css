@@ -195,12 +195,16 @@ body {
   padding: 0; }
 
 @media only screen and (max-width: 41.25em) {
+  .footer__row {
+    flex-direction: column !important; } }
+
+@media only screen and (max-width: 41.25em) {
   .footer__box {
     flex-direction: column; } }
 
 @media only screen and (max-width: 41.25em) {
   .footer__logo-box {
-    margin-right: 0;
+    margin-right: 0 !important;
     margin-bottom: 1.5rem; } }
 
 @media only screen and (max-width: 41.25em) {
