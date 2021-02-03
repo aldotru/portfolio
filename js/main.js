@@ -20,8 +20,8 @@ $(".projects__carousel").slick({
   variableWidth: true,
   // Moving next/previous buttons outside the slick wrapper
   // @type {object} DOM node
-  nextArrow: $('.projects__carousel-arrow--right'),
-  prevArrow: $('.projects__carousel-arrow--left')
+  nextArrow: $(".projects__carousel-arrow--right"),
+  prevArrow: $(".projects__carousel-arrow--left"),
 });
 
 // Testimonials carousel
@@ -37,6 +37,6 @@ $(".testimonials__carousel").slick({
   speed: 300,
   // Moving next/previous buttons outside the slick wrapper
   // @type {object} DOM node
-  nextArrow: $('.testimonials__arrow--right'),
-  prevArrow: $('.testimonials__arrow--left')
+  nextArrow: $(".testimonials__arrow--right"),
+  prevArrow: $(".testimonials__arrow--left"),
 });
