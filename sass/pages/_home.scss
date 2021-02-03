@@ -116,25 +116,26 @@
 }
 
 .tools {
+  &__info {
+    @media only screen and (max-width: $tablet-land) {
+      width: 100%;
+    }
+  }
+
   &__services {
-    display: flex;
-    flex-direction: column;
+    @media only screen and (max-width: $tablet-port) {
+      flex-direction: column !important;
+    }
   }
 
   &__service {
     @media only screen and (max-width: $phone) {
-      width: 100%;
+      width: 100% !important;
     }
 
     &:not(:last-child) {
       @media only screen and (max-width: $phone) {
         margin-bottom: 2rem;
-      }
-    }
-
-    &__info {
-      @media only screen and (max-width: $tablet-land) {
-        width: 100%;
       }
     }
 
@@ -305,7 +306,7 @@
   .playground {
     &__details {
       @media only screen and (max-width: $tablet-land) {
-        width: 100%;
+        width: 100% !important;
       }
     }
 
@@ -375,7 +376,7 @@
 .contact {
   &__details {
     @media only screen and (max-width: $tablet-land) {
-      width: 100%;
+      width: 100% !important;
     }
   }
 }
