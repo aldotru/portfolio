@@ -86,6 +86,10 @@
       grid-gap: 2rem 2rem;
       justify-items: center;
     }
+
+    @media only screen and (max-width: 26.25em) {
+      grid-gap: 1rem 2rem;
+    }
   }
 
   &__logos-box {
@@ -103,6 +107,16 @@
 
     @media only screen and (max-width: $tablet-land) {
       max-width: 12rem;
+    }
+
+    @media only screen and (max-width: 26.25em) {
+      max-width: 10rem;
+    }
+
+    &--miranda {
+      @media only screen and (max-width: 26.25em) {
+        max-width: 7rem;
+      }
     }
 
     &--prana {
@@ -129,12 +143,12 @@
   }
 
   &__service {
-    @media only screen and (max-width: $phone) {
+    @media only screen and (max-width: $tablet-port) {
       width: 100% !important;
     }
 
     &:not(:last-child) {
-      @media only screen and (max-width: $phone) {
+      @media only screen and (max-width: $tablet-port) {
         margin-bottom: 2rem;
       }
     }
@@ -261,10 +275,18 @@
   }
 
   &__quote {
+    @media only screen and (max-width: $phone) {
+      font-size: 1.5rem !important;
+    }
+
     &-icon {
       top: 0;
       left: 0;
       transform: translate(-35%, -35%);
+
+      @media only screen and (max-width: $tablet-land) {
+        max-width: 5rem;
+      }
     }
   }
 
@@ -275,6 +297,15 @@
     top: 50%;
     transform: translateY(30%);
 
+    @media only screen and (max-width: 72.5em) {
+      max-width: 5rem;
+    }
+
+    @media only screen and (max-width: $tablet-land) {
+      position: relative !important;
+      margin-bottom: 2rem;
+    }
+
     &:focus {
       outline: solid 0.25rem $black;
       outline-offset: 0.25rem;
@@ -282,10 +313,28 @@
 
     &--left {
       left: 0;
+
+      @media only screen and (max-width: 72.5em) {
+        left: 1rem;
+      }
+
+      @media only screen and (max-width: $tablet-land) {
+        left: 50%;
+        transform: translateX(-130%);
+      }
     }
 
     &--right {
       right: 0;
+
+      @media only screen and (max-width: 72.5em) {
+        right: 1rem;
+      }
+
+      @media only screen and (max-width: $tablet-land) {
+        right: 50%;
+        transform: translateX(-115%);
+      }
     }
   }
 
@@ -301,6 +350,13 @@
 
   .slick-list {
     padding: 0 !important;
+  }
+
+  .slick-slide {
+    @media only screen and (max-width: $tablet-land) {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
