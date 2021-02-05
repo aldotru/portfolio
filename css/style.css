@@ -241,7 +241,7 @@ body {
   @media only screen and (max-width: 48em) {
     .nav__logo-box {
       max-width: 6rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1.5rem; } }
 
 @media only screen and (max-width: 41.25em) {
   .nav__item {
@@ -388,6 +388,9 @@ body {
   @media only screen and (max-width: 41.25em) {
     .projects__project {
       max-width: 26rem; } }
+  @media only screen and (max-width: 30em) {
+    .projects__project {
+      max-width: 20rem; } }
   .projects__project:not(:last-child) {
     margin-right: 2rem; }
   .projects__project:focus, .projects__project:hover {
@@ -447,7 +450,8 @@ body {
   transform: translate(-35%, -35%); }
   @media only screen and (max-width: 60em) {
     .testimonials__quote-icon {
-      max-width: 5rem; } }
+      max-width: 5rem;
+      transform: translate(-20%, -35%); } }
 
 .testimonials__arrow {
   border: 0;
@@ -506,27 +510,24 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem 1rem; }
-  @media only screen and (max-width: 51.25em) {
-    .playground__projects {
-      grid-template-columns: repeat(1, 1fr); } }
   @media only screen and (max-width: 41.25em) {
     .playground__projects {
       grid-template-columns: repeat(1, 1fr);
-      margin: 0 auto; } }
+      justify-items: center; } }
 
 .playground__project-arrow:focus svg {
   fill: #2a2a2a; }
 
 .playground__project {
   max-width: 34rem; }
+  @media only screen and (max-width: 41.25em) {
+    .playground__project {
+      max-width: 100%; } }
   .playground__project:not(:last-child) {
     margin-right: 2rem; }
     @media only screen and (max-width: 51.25em) {
       .playground__project:not(:last-child) {
         margin-right: 0; } }
-    @media only screen and (max-width: 30em) {
-      .playground__project:not(:last-child) {
-        max-width: 20rem; } }
   .playground__project:focus, .playground__project:hover {
     box-shadow: 0.5rem 0.5rem #2a2a2a; }
   .playground__project:focus {
