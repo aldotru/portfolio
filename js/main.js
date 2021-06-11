@@ -1,15 +1,9 @@
 const $ = require("jquery");
-const Marquee3k = require("marquee3000");
 const slickCarousel = require("slick-carousel");
-
-// Initializing marquee
-Marquee3k.init();
 
 // Slick carousel options
 // Projects carousel
 $(".projects__carousel").slick({
-  // autoplay: true,
-  // autoplaySpeed: 5000,
   arrows: true,
   centerMode: true,
   draggable: true,
@@ -18,6 +12,7 @@ $(".projects__carousel").slick({
   slidesToScroll: 1,
   speed: 300,
   variableWidth: true,
+  
   // Moving next/previous buttons outside the slick wrapper
   // @type {object} DOM node
   nextArrow: $(".projects__carousel-arrow--right"),
@@ -26,8 +21,6 @@ $(".projects__carousel").slick({
 
 // Testimonials carousel
 $(".testimonials__carousel").slick({
-  // autoplay: true,
-  // autoplaySpeed: 5000,
   arrows: true,
   centerMode: true,
   draggable: true,
@@ -35,6 +28,7 @@ $(".testimonials__carousel").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 300,
+
   // Moving next/previous buttons outside the slick wrapper
   // @type {object} DOM node
   nextArrow: $(".testimonials__arrow--right"),
